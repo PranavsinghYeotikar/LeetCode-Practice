@@ -42,7 +42,7 @@ Aisa pairs mein data store karta hai — aur **O(1) time** mein access deta hai.
 ## 🛠️ Syntax + Internals
 
 ```java
-HashMap<String, Integer> map = new HashMap<>();
+HashMap<KeyType, ValueType> map = new HashMap<>(size);
 map.put("apple", 3);
 int count = map.get("apple");
 ```
@@ -59,6 +59,14 @@ int count = map.get("apple");
 ---
 
 ## 🎯 Use Cases
+
+| Purpose                                                          | Use this Data Structure | Why?                                             |
+| ---------------------------------------------------------------- | ----------------------- | ------------------------------------------------ |
+| Just want to check **if a value exists** (e.g., “Does 7 exist?”) | `HashSet<Integer>`      | Fastest lookup, O(1)                             |
+| Want to **map value to something** (like its index)              | `HashMap<Value, Info>`  | Allows you to get associated data                |
+| Want to **get element by index** (like `arr[2]`)                 | `ArrayList` or arrays   | Index-based access                               |
+| Want to store **key-value pairs** and also be **thread-safe**    | `Hashtable`             | Like `HashMap` but synchronized (old Java style) |
+
 
 * Login systems: `userID → password`
 * Word count apps

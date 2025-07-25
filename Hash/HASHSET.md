@@ -1,7 +1,7 @@
 # 🌀 Definition & Purpose
 #### What is HashSet?
 * Java ka HashSet ek **collection class** hai jo **unique elements ko store karta** hai — duplicates allowed nahi. 
-* Under the hood, ye [Hash Table](HASH_TABLE.md) use karta hai.
+* Under the hood, ye [Hash Table](Hash/HASH_TABLE.md) use karta hai.
 > Stores unique elements
 
 #### Purpose
@@ -45,9 +45,9 @@ for(String s : set) {
 * `add(E e)`
   * Insertion/Addition
   * ```
-        HashSet<String> set = new HashSet<>();
-        set.add("Ram"); // true
-        set.add("Ram"); // false, already present
+    HashSet<String> set = new HashSet<>();
+    set.add("Ram"); // true
+    set.add("Ram"); // false, already present
 
 * `remove(Object o)`
   * Deletion
@@ -75,6 +75,14 @@ for(String s : set) {
     }
 
 # 🧪 Use Cases 
+
+| Purpose                                                          | Use this Data Structure | Why?                                             |
+| ---------------------------------------------------------------- | ----------------------- | ------------------------------------------------ |
+| Just want to check **if a value exists** (e.g., “Does 7 exist?”) | `HashSet<Integer>`      | Fastest lookup, O(1)                             |
+| Want to **map value to something** (like its index)              | `HashMap<Value, Info>`  | Allows you to get associated data                |
+| Want to **get element by index** (like `arr[2]`)                 | `ArrayList` or arrays   | Index-based access                               |
+| Want to store **key-value pairs** and also be **thread-safe**    | `Hashtable`             | Like `HashMap` but synchronized (old Java style) |
+
 ### Coding Patterns Using It:
 * **Sliding Window** (e.g., longest substring without repeating chars)
 * **BFS/DF**S visited tracking
