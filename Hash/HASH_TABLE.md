@@ -1,6 +1,6 @@
 # 🌀 Definition & Purpose
 * Hash Table ek aisa data structure hai jo **key-value pairs ko store** karta hai 
-![alt text](src/hashtable.png)
+![hashtable.png](src/hashtable.png)
 * ##### Key-value pairs
   * `"Panya" → Key
     "98234xxxxx" → Value`
