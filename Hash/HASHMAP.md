@@ -18,7 +18,7 @@ Hash Table ek aisa data structure hai jo **key-value pairs** ko store karta hai.
 
 🧩 Example:
 
-```
+```java
 "Panya" → Key
 "98234xxxxx" → Value
 ```
